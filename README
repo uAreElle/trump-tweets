@@ -1,4 +1,4 @@
-Trump Tweets
+## Trump Tweets
 Short program that displays latest 15 Twitter posts by Donald Trump.
 
 Run with:      python trump.py
@@ -11,4 +11,5 @@ How to generate Twitter API keys and access tokens:
 	- Click on "Create My Access Token" 
 	- Replace placeholders in trump.py with generated keys & tokens 
 
-
+---
+Inspired by: (https://github.com/brtsai/TrumpLatest)
