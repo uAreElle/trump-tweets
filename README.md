@@ -1,6 +1,6 @@
 ## Trump Tweets
-Short program that displays latest 15 Twitter posts by Donald Trump.
-Inspired by @brtsai's fb ver: https://github.com/brtsai/TrumpLatest
+Short program that displays latest 15 Twitter posts by Donald Trump. </br>
+Inspired by: https://github.com/brtsai/TrumpLatest
 
 Run with: 
 ```
