@@ -1,26 +1,24 @@
-# Requirement:	pip install python-twitter
+import tweepy
 
-import twitter
-
-# Populate Twitter API details below from https://apps.twitter.com/
+# Populate Twitter API credentials below from https://apps.twitter.com/
 consumer_key = "REPLACE-WITH-YOURS"
 consumer_secret = "REPLACE-WITH-YOURS"
 access_token_key = "REPLACE-WITH-YOURS"
 access_token_secret = "REPLACE-WITH-YOURS"
 
-api = twitter.Api(
-	consumer_key = consumer_key,
-	consumer_secret = consumer_secret,
-	access_token_key = access_token_key,
-	access_token_secret = access_token_secret
-)
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token_key, access_token_secret)
 
-# Get list of latest 20 tweets (Status objects)
-t = api.GetUserTimeline(screen_name='realDonaldTrump', count=20) 
+api = tweepy.API(auth)
+
+# Get list of latest 15 tweets (Status objects)
+screen_name="realDonaldTrump"
+max_tweets = 15
+t = api.user_timeline(screen_name=screen_name, count=max_tweets, tweet_mode='extended')
 
 ctr = 0
-print "Printing 20 latest Trump tweets:"
+print "Printing 15 latest Trump tweets:"
 for tweet in t:
 	ctr += 1
-	print "(" + str(ctr) + ")" + "[" + tweet.created_at + "]"
-	print tweet.text + "\n"
+	print "(" + str(ctr) + ")" + "[" + str(tweet.created_at) + "]"
+	print tweet.full_text + "\n"

@@ -1,7 +1,7 @@
 Trump Tweets
 Short program that displays latest 20 tweets by Trump.
 
-Requirement: "pip install python-twitter"
+~~Requirement: "pip install python-twitter"~~
 Run with:    "python trump.py"
 
 How to generate Twitter API keys and access tokens:
@@ -11,5 +11,3 @@ How to generate Twitter API keys and access tokens:
 	- Click on new app's "Keys and Access Tokens" tab
 	- Click on "Create My Access Token" 
 	- Replace placeholders in trump.py with generated keys & tokens 
-
-
