@@ -1,7 +1,6 @@
 Trump Tweets
 Short program that displays latest 15 tweets by Trump.
 
-~~Requirement: pip install python-twitter~~
 Run with:      python trump.py
 
 How to generate Twitter API keys and access tokens:
